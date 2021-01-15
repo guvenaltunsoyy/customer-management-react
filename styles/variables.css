@@ -2,9 +2,17 @@
   --c-primary: white;
   --c-text: black;
   --fade: 120ms;
+  --navigation-bar-delay:0s;
+  --font-family:"Inter", sans-serif;
+  --bg-color: #252954;
+  --body-color: #9b9ca7;
+  --main-bg: #0e0e23;
 }
 
 .theme-dark {
-  --c-primary: black;
-  --c-text: white;
+  --c-primary: #252954;
+  --c-text: #9b9ca7;
+  --bg-color: #252954;
+  --body-color: #9b9ca7;
+  --main-bg: #0e0e23;
 }

@@ -1,1 +1,7 @@
+export { default as Apps } from './Apps'
+export { default as HomePage } from './HomePage'
+export { default as Layer } from './Layer'
+export { default as Logout } from './Logout'
+export { default as Messages } from './Messages'
 export { default as Search } from './Search'
+export { default as Settings } from './Settings'

@@ -1,15 +1,40 @@
+import {Apps, HomePage, Layer, Logout, Messages, Settings} from "../components/icons";
+
+
 export const THEME = {
   LIGHT: 'theme-light',
   DARK: 'theme-dark'
 }
 
 export const PAGES = {
-  home: {
+  apps: {
     path: '/',
-    name: 'Home'
+    name: 'Apps',
+    icon:<Apps />
   },
   about: {
-    path: '/about',
-    name: 'About'
-  }
+    path: '/layer',
+    name: 'Layer',
+    icon:<Layer/>
+  },
+  home: {
+    path: '/home',
+    name: 'Home',
+    icon:<HomePage/>
+  },
+  messages: {
+    path: '/messages',
+    name: 'Messages',
+    icon:<Messages/>
+  },
+  settings: {
+    path: '/settings',
+    name: 'Settings',
+    icon:<Settings/>
+  },
+  logout: {
+    path: '/logout',
+    name: 'Logout',
+    icon:<Logout/>
+  },
 }

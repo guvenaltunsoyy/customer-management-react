@@ -6,12 +6,12 @@ import styles from './index.module.css'
 
 function Nav() {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.navigationBar}>
       {Object.keys(PAGES).map((key) => {
         const PAGE = PAGES[key]
         return (
           <Link href={PAGE.path} key={`link-${key}`}>
-            <a>{PAGE.name}</a>
+            <a>{PAGE.icon}</a>
           </Link>
         )
       })}

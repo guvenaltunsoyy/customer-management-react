@@ -1,13 +1,39 @@
-.nav {
-  margin-bottom: 2rem;
+.navigationBar {
+  width: 6rem;
   display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
   align-items: center;
+  padding: 117px 0 40px;
+  animation: left 1s var(--navigation-bar-delay) both;
+}
+.navigationBar svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color:#9b9ca7
+}
+.navigationBar svg + svg {
+  margin-top: 34px;
+}
 
-  a {
-    color: inherit;
+.navigationBar svg:last-child {
+   margin-top: auto;
+ }
+.navigationBar svg:active {
+   color: #4255d4;
+}
+.navigationBar svg:hover {
+   color: #4255d4;
+}
+@keyframes left {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
   }
 
-  a + a {
-    margin-left: 10px;
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }

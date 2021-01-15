@@ -36,6 +36,12 @@ function HomePage() {
         >
           {store.theme === THEME.LIGHT ? 'Dark' : 'Light'}
         </Button>
+          <Icon.Apps />
+          <Icon.HomePage />
+          <Icon.Layer />
+          <Icon.Logout />
+          <Icon.Messages />
+          <Icon.Settings />
       </div>
 
       <br />

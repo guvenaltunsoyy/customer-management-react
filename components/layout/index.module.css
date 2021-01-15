@@ -1,3 +1,9 @@
 .layout {
   padding: 2rem;
+  background-color: var(--main-bg);
+  max-width: 1600px;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
 }
