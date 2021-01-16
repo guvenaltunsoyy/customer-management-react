@@ -1,0 +1,10 @@
+.box {
+    background: var(--box-bg-color);
+    background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+    padding: 40px 30px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-height: 430px;
+}

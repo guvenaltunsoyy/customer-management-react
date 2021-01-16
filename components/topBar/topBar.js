@@ -1,11 +1,11 @@
 import React, {useContext, useState} from 'react'
 
 import styles from './index.module.css'
-import StoreContext from '../../store'
 import * as Icons from "../icons";
 import Button from "../button";
-import {useRouter} from "next/router";
 import cn from "classnames";
+import {THEME} from "../../constants";
+import StoreContext from "../../store";
 
 const tabs = [
     {
@@ -24,9 +24,8 @@ const tabs = [
 ]
 
 function TopBar(props) {
-    const store = useContext(StoreContext)
-    const router = useRouter();
     const [selectedTab, setSelectedTab] = useState(tabs[0]);
+    const store = useContext(StoreContext)
     const handleTabChange = (tab) => {
         setSelectedTab(tab);
     };
@@ -49,6 +48,15 @@ function TopBar(props) {
                 <div className={styles.userInfo}>Mike J</div>
                 <Icons.User/>
                 <div className="hour">08.20 pm</div>
+                <Button
+                    onClick={() =>
+                        store.changeTheme(
+                            store.theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT
+                        )
+                    }
+                >
+                    {store.theme === THEME.LIGHT ? 'Dark' : 'Light'}
+                </Button>
             </div>
         </div>
     )
