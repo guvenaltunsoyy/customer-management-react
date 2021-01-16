@@ -1,55 +1,16 @@
-import React, { useContext } from 'react'
-import Head from 'next/head'
-import StoreContext from '../store'
+import React  from 'react'
 
 import Layout from '../components/layout'
-import Button from '../components/button'
-import * as Icon from '../components/icons'
-import { THEME } from '../constants'
+import Home from '../components/homePage/homePage'
+import TopBar from "../components/topBar/topBar";
+import {StoreProvider} from "../store";
 
 function HomePage() {
-  const store = useContext(StoreContext)
 
   return (
     <Layout>
-      <Head>
-        <title>Home Page</title>
-      </Head>
-
-      <h1>Home page</h1>
-
-      <br />
-
-      <Icon.Search style={{ fontSize: 24 }} />
-
-      <br />
-      <br />
-
-      <div>
-        Change Theme{' '}
-        <Button
-          onClick={() =>
-            store.changeTheme(
-              store.theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT
-            )
-          }
-        >
-          {store.theme === THEME.LIGHT ? 'Dark' : 'Light'}
-        </Button>
-          <Icon.Apps />
-          <Icon.HomePage />
-          <Icon.Layer />
-          <Icon.Logout />
-          <Icon.Messages />
-          <Icon.Settings />
-      </div>
-
-      <br />
-      <br />
-
-      <div>
-        API url (env): <b>{process.env.API_URL}</b>
-      </div>
+        <TopBar/>
+        <Home/>
     </Layout>
   )
 }

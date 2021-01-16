@@ -3,7 +3,7 @@ import Button from "../components/button";
 
 
 export default {
-  title: 'Example/Button',
+  title: 'Button',
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -17,24 +17,4 @@ Primary.args = {
   primary: true,
   label: 'Button',
   children:'Primary'
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-  children:'Secondary'
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-  children:'large'
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
-  children:'small'
 };

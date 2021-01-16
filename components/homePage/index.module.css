@@ -1,0 +1,8 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 25px;
+    overflow: auto;
+    padding-left: 0;
+}

@@ -16,7 +16,8 @@
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^5.0.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

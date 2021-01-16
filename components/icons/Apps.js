@@ -6,6 +6,7 @@ function SvgApps(props) {
       viewBox="0 0 512 512"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      className="apps_svg__active"
       width="1em"
       height="1em"
       {...props}
