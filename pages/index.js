@@ -1,18 +1,15 @@
-import React  from 'react'
+import React from 'react'
+import {Home, Layout, TopBar} from "../components";
 
-import Layout from '../components/layout'
-import Home from '../components/homePage/homePage'
-import TopBar from "../components/topBar/topBar";
-import {StoreProvider} from "../store";
 
 function HomePage() {
 
-  return (
-    <Layout>
-        <TopBar/>
-        <Home/>
-    </Layout>
-  )
+    return (
+        <Layout>
+            <TopBar/>
+            <Home/>
+        </Layout>
+    )
 }
 
 export default HomePage
