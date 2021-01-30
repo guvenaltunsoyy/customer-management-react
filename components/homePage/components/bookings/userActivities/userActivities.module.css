@@ -9,7 +9,7 @@
   }
 }
 .root {
-  animation: top 1s 0.2s both;
+  animation: top 1s var(--delay) both;
 }
 .activityLinks {
   display: flex;

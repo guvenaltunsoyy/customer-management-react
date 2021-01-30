@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './index.module.css'
 import Head from 'next/head'
 import { Box, BoxDescription, BoxTitle } from '../../components'
-import UserActivities from './userActivities'
+import { UserActivities, DiscountOffers } from './components'
 
 function Home(props) {
   return (
@@ -13,14 +13,7 @@ function Home(props) {
 
       <div className={styles.subContainer}>
         <UserActivities />
-        <Box>
-          <BoxTitle>Discount Offers</BoxTitle>
-          <BoxDescription>
-            Hoo - is an adaptive Online Courses Application with a wide range of
-            course directions. The students will have a great possibility to
-            study.
-          </BoxDescription>
-        </Box>
+        <DiscountOffers />
         <Box>
           <BoxTitle>Discount Offers</BoxTitle>
           <BoxDescription>

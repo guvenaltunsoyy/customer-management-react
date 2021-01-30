@@ -1,0 +1,137 @@
+@keyframes top {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.root {
+  animation: top 1s var(--delay) both;
+  max-width: 350px;
+  width: 100%;
+  max-height: 430px;
+}
+.offerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.offerInfo {
+  display: flex;
+  flex-direction: column;
+}
+.offerInfo h5 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.offerButton {
+  background: var(--hover-color);
+  padding: 14px;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-right: 0;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.price {
+  font-size: 17px;
+  color: #17a98a;
+  font-weight: 500;
+}
+.dist {
+  font-size: 17px;
+  color: #e85471;
+  font-weight: 500;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #5b5f78;
+  border-radius: 50%;
+  position: relative;
+}
+.pie {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+.pie svg circle {
+  fill: transparent;
+  stroke: #4356d6;
+  stroke-width: 14;
+  stroke-dasharray: 275;
+  stroke-dashoffset: 235;
+  -webkit-animation: pieChart 3.9s linear forwards;
+  animation: pieChart 3.9s linear forwards;
+}
+
+@-webkit-keyframes pieChart {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pieChart {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.counter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #3e50c5;
+  font-weight: 500;
+}
+
+.offer-button {
+  background: #4255d4;
+  padding: 14px;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-right: 0;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.discountProfile {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+}
+.discountProfile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin: 0 16px 0 12px;
+}
+.discountDetail {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.discountName {
+  font-weight: 500;
+  font-size: 15px;
+}
+.discountType {
+  font-size: 13px;
+  margin-top: 4px;
+}

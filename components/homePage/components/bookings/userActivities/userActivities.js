@@ -1,19 +1,18 @@
 import React from 'react'
 
 import styles from './userActivities.module.css'
-import { Box, BoxDescription, BoxTitle } from '../../components'
-import Button from '../button'
+import { Box, BoxDescription, BoxTitle } from '../../../..'
+import Button from '../../../../button'
 import clsx from 'clsx'
-import { Location } from '../icons'
-export default function userActivities() {
+import { Location } from '../../../../icons'
+export default function userActivities({animationDelay=0.2}) {
   return (
-    <Box className={styles.root}>
+    <Box className={styles.root} style={{ '--delay': `${animationDelay}s` }}>
       <BoxTitle>User activities</BoxTitle>
       <BoxDescription>
         Hoo - is an adaptive Online Courses Application with a wide range of
         course directions. The students will have a great possibility to study.
       </BoxDescription>
-
       <div className={styles.activityLinks}>
         <Button className={clsx(styles.activityLink, styles.active)} href="#">
           Current User
