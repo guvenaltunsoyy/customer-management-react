@@ -12,14 +12,15 @@
   animation: top 1s var(--delay) both;
   padding: 0;
   min-width: 250px;
+  background-color: #10122b;
 }
-.pickerContainer * {
+.pickerContainer *,
+.react-datepicker__header {
   background-color: #10122b;
   font-size: 13px;
   font-weight: 500;
   color: #9b9ca7;
 }
-
 .pickerContainer > * {
   width: 100%;
 }
@@ -39,7 +40,7 @@
 .title {
   background: #10122b;
   border-radius: 6px 6px 0 0;
-  padding: 20px 45px;
+  padding: 20px 35px;
   font-size: 14px;
   font-weight: 500;
   align-items: center;
