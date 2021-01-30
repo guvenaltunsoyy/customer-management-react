@@ -1,26 +1,24 @@
 .button {
-    cursor: pointer;
-    padding: 6px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--fade);
-    border: 0;
-    background: transparent;
-    color: var(--c-secondary);
-    gap: 10px;
-    font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--fade);
+  border: 0;
+  color: var(--c-secondary);
+  gap: 10px;
+  font-size: 1rem;
 }
 
 .button:hover {
-    color: var(--hover-color)
+  color: var(--hover-color);
 }
 
 .button.active {
-    color: var(--hover-color)
+  color: var(--hover-color);
 }
 
 .button svg {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
