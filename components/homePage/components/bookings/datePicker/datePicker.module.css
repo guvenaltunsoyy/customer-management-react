@@ -1,0 +1,59 @@
+@keyframes top {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.root {
+  animation: top 1s var(--delay) both;
+  padding: 0;
+  min-width: 250px;
+}
+.pickerContainer * {
+  background-color: #10122b;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9b9ca7;
+}
+
+.pickerContainer > * {
+  width: 100%;
+}
+.selectedDay,
+.selectedDay:hover,
+.day:hover {
+  background: #4255d4;
+  border-radius: 50%;
+  color: #fff;
+}
+.day {
+  background-color: #10122b;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9b9ca7;
+}
+.title {
+  background: #10122b;
+  border-radius: 6px 6px 0 0;
+  padding: 20px 45px;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.title button {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 30px;
+}
+.title svg {
+  color: #4154d1;
+  background: #14183c;
+  border-radius: 50%;
+  width: 30px;
+}
