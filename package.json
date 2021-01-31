@@ -4,7 +4,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "NODE_ENV=development next",
-    "build": "NODE_ENV=production next build",
+    "build": "NODE_ENV=production yarn install && next build",
     "start": "next start",
     "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\"",
     "storybook": "start-storybook -p 6006",
