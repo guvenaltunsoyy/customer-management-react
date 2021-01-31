@@ -7,8 +7,12 @@
     --bg-color: #9b9ca7;
     --main-bg: #eee;
     --hover-color: #4255d4;
-    --topbar-bg-color: #141834;
-    --box-bg-color: #1a2049;
+    --topbar-bg-color: #eee;
+    --box-bg-color: #eee;
+    --waiting-color: #3E4EC2;
+    --red-color: #d14b69;
+    --green-color: #1aa385;
+    --box-bg: radial-gradient(circle, #eee 0%, #eee 50%);
 }
 
 .theme-dark {
@@ -19,4 +23,9 @@
     --hover-color: #4255d4;
     --topbar-bg-color: #141834;
     --box-bg-color: #1a2049;
+    --waiting-color: #3E4EC2;
+    --red-color: #d14b69;
+    --green-color: #1aa385;
+    --box-bg: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+
 }

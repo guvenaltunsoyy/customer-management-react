@@ -1,6 +1,6 @@
 .box {
     background: var(--box-bg-color);
-    background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+    background: var(--box-bg);
     padding: 40px 30px;
     border-radius: 6px;
     display: flex;

@@ -3,7 +3,7 @@ import styles from './table.module.css'
 
 import {Box, BoxDescription, BoxTitle} from '../../../..'
 import Button from "../../../../button";
-import {Active, Fire, LeftArrow, Rejected, RightArrow, Waiting, Wave} from "../../../../icons";
+import {Active, Calender, Fire, LeftArrow, Rejected, RightArrow, Waiting, Wave} from "../../../../icons";
 import clsx from "clsx";
 
 const statusesMapper = {
@@ -25,7 +25,6 @@ const statuses = {
         Rejected
     </div>,
 }
-
 const results = [
     {
         time: '17:00',
@@ -124,8 +123,8 @@ export default function table({animationDelay = 1}) {
         <Box className={styles.root} style={{'--delay': `${animationDelay}s`}}>
             <BoxTitle className={styles.title}>
                 <div className={styles.calender}>
-                    <h4 style={{alignItems: 'center'}}>
-
+                    <Calender/>
+                    <h4>
                         Calender View
                     </h4>
                     <h4>Today</h4>
@@ -140,7 +139,7 @@ export default function table({animationDelay = 1}) {
                     </Button>
                 </div>
                 <Button className={styles.createButton}>
-                    create
+                    + create
                 </Button>
             </BoxTitle>
             <BoxDescription>

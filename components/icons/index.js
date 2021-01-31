@@ -1,3 +1,8 @@
+export {default as AmericanExpress} from './AmericanExpress'
+export {default as Calender} from './Calender'
+export {default as Mastercard} from './Mastercard'
+export {default as Paypal} from './Paypal'
+export {default as Visa} from './Visa'
 export {default as Active} from './Active'
 export {default as Fire} from './Fire'
 export {default as Rejected} from './Rejected'
