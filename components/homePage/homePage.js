@@ -2,7 +2,13 @@ import React from 'react'
 import styles from './index.module.css'
 import Head from 'next/head'
 import { Box, BoxDescription, BoxTitle } from '../../components'
-import { UserActivities, DiscountOffers, DatePicker, User } from './components'
+import {
+  UserActivities,
+  DiscountOffers,
+  DatePicker,
+  User,
+  Table
+} from './components'
 
 function Home(props) {
   return (
@@ -16,6 +22,7 @@ function Home(props) {
         <DiscountOffers />
         <DatePicker />
         <User />
+        <Table />
       </div>
     </div>
   )

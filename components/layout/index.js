@@ -8,7 +8,7 @@ function Layout({children}) {
     return (
         <div className={styles.layout}>
             <Nav/>
-            <main style={{width: '100%'}}>{children}</main>
+            <main>{children}</main>
         </div>
     )
 }

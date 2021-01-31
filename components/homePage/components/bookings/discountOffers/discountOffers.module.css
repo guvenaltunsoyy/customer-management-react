@@ -10,8 +10,9 @@
 }
 .root {
   animation: top 1s var(--delay) both;
-  max-width: 350px;
-  width: 100%;
+  min-width: 25%;
+  max-width: 25%;
+  width: 25%;
   max-height: 430px;
 }
 .offerContainer {

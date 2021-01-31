@@ -6,12 +6,17 @@ import clsx from 'clsx'
 export default function discountOffers({ animationDelay = 0.4 }) {
   const [counter, setCounter] = useState(0)
   useEffect(() => {
-    if (counter !== 92) {
-      setTimeout(() => {
-        setCounter((s) => s + 1)
-      }, 42)
-    }
-  }, [counter])
+    let count = 0
+    setCounter(0)
+    const interval = setInterval(() => {
+      setCounter((s) => s + 1)
+      count++
+      if (count >= 92) {
+        clearInterval(interval)
+      }
+    }, 42)
+    return () => clearInterval(interval)
+  }, [])
   return (
     <Box className={styles.root} style={{ '--delay': `${animationDelay}s` }}>
       <BoxTitle>Discount Offers</BoxTitle>

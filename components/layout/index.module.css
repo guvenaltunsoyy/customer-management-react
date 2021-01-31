@@ -1,9 +1,19 @@
 .layout {
-  padding: 2rem;
-  background-color: var(--main-bg);
-  max-width: 1600px;
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--main-bg);
+    max-width: 1600px;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.layout main {
+    width: 100%;
+    overflow: auto;
+}
+
+.layout main::-webkit-scrollbar {
+    width: 10px;
+    background: var(--main-bg);
 }

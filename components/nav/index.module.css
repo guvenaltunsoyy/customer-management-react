@@ -7,9 +7,13 @@
   padding: 117px 0 40px;
   animation: left 1s var(--navigation-bar-delay) both;
   padding-top: 90px;
+  gap: 20px;
 }
 .navigationBar a {
   padding: 6px;
+}
+.navigationBar a:last-child {
+  justify-self: flex-end;
 }
 
 @keyframes left {
