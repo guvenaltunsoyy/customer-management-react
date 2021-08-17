@@ -36,16 +36,18 @@
     "postcss": "8.2.10",
     "postcss-custom-media": "^7.0.8",
     "postcss-loader": "^4.1.0",
-    "postcss-nested": "5.0.3",
+    "postcss-nested": "5.0.6",
     "prettier": "^2.2.1",
     "prop-types": "^15.7.2",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0"
   },
   "peerDependencies": {
-    "postcss": "8.2.10"
+    "postcss": "8.2.10",
+     "postcss-nested": "5.0.6"
   },
   "resolutions": {
-    "postcss": "8.2.10"
+    "postcss": "8.2.10",
+     "postcss-nested": "5.0.6"
   }
 }
